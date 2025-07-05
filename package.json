@@ -1,0 +1,9 @@
+{
+  "name": "rogue",
+  "version": "1.0.0",
+  "description": "in-memory database",
+  "license": "ISC",
+  "author": "sarim",
+  "type": "commonjs",
+  "main": "src/main.js"
+}
