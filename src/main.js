@@ -1,7 +1,11 @@
-const net = require("net"); // used to create a tcp server
+const net = require('net');
 
 const server = net.createServer((connection) => {
-    // do something
+    connection.on('data', (data) => {
+        if (data.toString().toLowerCase().includes('ping')) {
+            connection.write('+PONG\r\n');
+        }
+    });
 });
 
 server.listen(1234, "127.0.0.1");

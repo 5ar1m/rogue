@@ -5,5 +5,8 @@
   "license": "ISC",
   "author": "sarim",
   "type": "commonjs",
-  "main": "src/main.js"
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  }
 }
