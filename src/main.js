@@ -5,6 +5,7 @@ const server = net.createServer((connection) => {
         if (data.toString().toLowerCase().includes('ping')) {
             connection.write('+PONG\r\n');
         }
+        // after learning redis protocols try to implement ping for multiple pings
     });
 });
 
